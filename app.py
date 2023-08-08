@@ -78,9 +78,8 @@ def translate_chat_gpt(update):
 async def start (update: Update, context: ContextTypes.DEFAULT_TYPE):
     await context.bot.send_message(
         chat_id=update.effective_chat.id,
-        text="I'm a bot, this is a test."
+        text="Hello, and thanks for using ZW's Helpful chatbot! 🤖 \n\nHere's a list of commands to get you started: \n/start: Recalls this list of instructions \n/ask: Interact with ChatGPT to get ChatGPT to do anything you'd like!\n/translate: Translates all languages to English, and English to Chinese. More language support coming shortly. \n\n⚡ Upcoming Features ⚡: \n1. Currency Conversion \n2. Weather Forecast \n"
     )
-    print("200")
 
 async def ask (update: Update, context: ContextTypes.DEFAULT_TYPE):
     print("ask command triggered.")
